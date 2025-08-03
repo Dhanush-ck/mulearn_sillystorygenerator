@@ -11,12 +11,13 @@ body, html {
     display: flex;
     align-items: center;
     justify-content: center;
-    background: radial-gradient(circle, #9ECAD6 50%, #748DAE );
+    background: radial-gradient(circle,#748DAE 0%, #9ECAD6 50%, #748DAE );
+    animation: bg-animation 1.3s forwards infinite ;
 }
 
 .container-element { 
     width: 40vw;
-    min-height: 55vh;
+    /* min-height: 55vh; */
     background-color: #F5CBCB;
     display: flex;
     align-items: center;
@@ -79,13 +80,210 @@ h1 {
     border-radius: 5px;
 }
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 400px) {
     .container-element {
         width: 80vw;
-        min-height: 45vh;
+        /* min-height: 40vh; */
+        font-size: 13px;
+    }
+
+    #customName {
+        font-size: 10px;
+        width: 100px;
+    }
+
+    .randomize {
+        font-size: 15px;
     }
 
     h1 {
-        font-size: 150%;
+        font-size: 25px;
+        margin: 15px 10px 10px 10px;
+    }
+}
+
+@media only screen and (min-width: 401px) and (max-width: 600px) {
+    .container-element {
+        width: 80vw;
+        /* min-height: 45vh; */
+        font-size: 17px;
+    }
+
+    h1 {
+        font-size: 30px;
+    }
+
+    #customName {
+        font-size: 15px;
+        width: 130px;
+    }
+
+    .randomize {
+        font-size: 18px;
+    }
+    
+}
+
+@media only screen and (min-width: 601px) and (max-width: 768px) {
+    .container-element {
+        width: 80vw;
+        /* min-height: 45vh; */
+        font-size: 20px;
+    }
+
+    #customName {
+        font-size: 18px;
+        width: 200px;
+    }
+
+    .randomize {
+        font-size: 22px;
+    }
+
+    .story {
+        margin: 20px;
+        padding: 20px;
+        line-height: 25px;
+    }
+}
+
+@media only screen and (min-width: 769px) and (max-width: 992px) {
+    .container-element {
+        width: 80vw;
+        /* min-height: 55vh; */
+        height: auto;
+        font-size: 25px;
+    }
+    
+    h1 {
+        margin: 50px 10px 40px 10px;
+    }
+
+    #customName {
+        font-size: 20px;
+        width: 220px;
+        padding: 10px;
+    }
+
+    .randomize {
+        font-size: 25px;
+    }
+
+    .story {
+        margin: 20px 20px 50px 20px;
+        padding: 20px;
+        line-height: 30px;
+    }
+}
+
+@media only screen and (min-width: 993px) and (max-width: 1200px ) and (min-height: 700px) {
+    .container-element {
+        width: 70vw;
+        font-size: 30px;
+    }
+
+    h1 {
+        font-size: 65px;
+    }
+
+    #customName {
+        font-size: 28px;
+        width: 250px;
+        padding: 10px;
+    }
+
+    .randomize {
+        font-size: 32px;
+        padding: 15px;
+    }
+
+    .story {
+        padding: 22px;
+        line-height: 38px;
+    }
+
+    #us, #uk {
+        width: 25px;
+        height: 25px;
+    }
+}
+
+@media only screen and (min-width: 993px) and (max-width: 1200px ) and (max-height: 699px) {
+
+    h1 {
+        font-size: 38px;
+    }
+
+}
+
+@media only screen and (min-width: 1201px) {
+    h1 {
+        font-size: 50px ;
+    }
+}
+
+@keyframes bg-animation {
+    0% {
+        background: radial-gradient(circle,#748DAE 0%, #9ECAD6 50%, #748DAE );
+    }
+    5% {
+        background: radial-gradient(circle,#748DAE 5%, #9ECAD6 55%, #748DAE );
+    }
+    10% {
+        background: radial-gradient(circle,#748DAE 10%, #9ECAD6 60%, #748DAE );
+    }
+    15% {
+        background: radial-gradient(circle,#748DAE 15%, #9ECAD6 65%, #748DAE );
+    }
+    20% {
+        background: radial-gradient(circle,#748DAE 20%, #9ECAD6 70%, #748DAE );
+    }
+    25% {
+        background: radial-gradient(circle,#748DAE 25%, #9ECAD6 75%, #748DAE );
+    }
+    30% {
+        background: radial-gradient(circle,#748DAE 30%, #9ECAD6 80%, #748DAE );
+    }
+    35% {
+        background: radial-gradient(circle,#748DAE 35%, #9ECAD6 85%, #748DAE );
+    }
+    40% {
+        background: radial-gradient(circle,#748DAE 40%, #9ECAD6 90%, #748DAE );
+    }
+    45% {
+        background: radial-gradient(circle,#748DAE 45%, #9ECAD6 95%, #748DAE );
+    }
+    50% {
+        background: radial-gradient(circle, #9ECAD6 0%,#748DAE 50%, #9ECAD6 );
+    }
+    55% {
+        background: radial-gradient(circle, #9ECAD6 5%,#748DAE 55%, #9ECAD6 );
+    }
+    60% {
+        background: radial-gradient(circle, #9ECAD6 10%,#748DAE 60%, #9ECAD6 );
+    }
+    65% {
+        background: radial-gradient(circle, #9ECAD6 15%,#748DAE 65%, #9ECAD6 );
+    }
+    70% {
+        background: radial-gradient(circle, #9ECAD6 20%,#748DAE 70%, #9ECAD6 );
+    }
+    75% {
+        background: radial-gradient(circle, #9ECAD6 25%,#748DAE 75%, #9ECAD6 );
+    }
+    80% {
+        background: radial-gradient(circle, #9ECAD6 30%,#748DAE 80%, #9ECAD6 );
+    }
+    85% {
+        background: radial-gradient(circle, #9ECAD6 35%,#748DAE 85%, #9ECAD6 );
+    }
+    90% {
+        background: radial-gradient(circle, #9ECAD6 40%,#748DAE 90%, #9ECAD6 );
+    }
+    95% {
+        background: radial-gradient(circle, #9ECAD6 45%,#748DAE 95%, #9ECAD6 );
+    }
+    100% {
+        background: radial-gradient(circle, #748DAE 0%, #9ECAD6 50%,#748DAE );
     }
 }
